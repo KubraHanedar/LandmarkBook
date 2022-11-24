@@ -35,10 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         landmarkImages.append(UIImage(named: "buckingham-palace")!)
         landmarkImages.append(UIImage(named: "empire-state")!)
         landmarkImages.append(UIImage(named: "golden-gate-bridge")!)
+    
         
-        
-       
-
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return landmarkNames.count
@@ -65,7 +63,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let destinationVS = segue.destination as! DetailsVC
             destinationVS.selectedlandmarkName = chosenLandmarkName
             destinationVS.selectedLandmarkImage = chosenLandmarkImage
-            
             
         }
     }
