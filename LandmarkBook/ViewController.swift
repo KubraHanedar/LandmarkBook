@@ -18,6 +18,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        var landmarkNames = [String]()
+        landmarkNames.append("Collesium")
+        landmarkNames.append("Notre-Dame Cathedral")
+        landmarkNames.append("Buckingham Palace")
+        landmarkNames.append("Empire State")
+        landmarkNames.append("Golden Gate Bridge")
+        
+        var landmarkImages = [UIImage]()
+        landmarkImages.append(UIImage(named: "Collesium")!)
+        landmarkImages.append(UIImage(named: "notre-dame-cathedral")!)
+        landmarkImages.append(UIImage(named: "buckingham-palace")!)
+        landmarkImages.append(UIImage(named: "empire-state")!)
+        landmarkImages.append(UIImage(named: "golden-gate-bridge")!)
+       
+
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
