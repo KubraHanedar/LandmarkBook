@@ -15,6 +15,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var landmarkNames = [String]()
     var landmarkImages = [UIImage]()
     
+    var chosenLandmarkName = ""
+    var chosenLandmarkImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +52,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //content.secondaryText = "Test"
         cell.contentConfiguration = content
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenLandmarkName = landmarkNames[indexPath.row]
+        chosenLandmarkImage = landmarkImages[indexPath.row]
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVS = segue.destination as! DetailsVC
+            destinationVS.selectedlandmarkName = chosenLandmarkName
+            destinationVS.selectedLandmarkImage = chosenLandmarkImage
+            
+            
+        }
     }
 }
 

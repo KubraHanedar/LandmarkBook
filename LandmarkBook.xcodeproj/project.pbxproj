@@ -13,6 +13,7 @@
 		412626C1292FC4EC00C46101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412626BF292FC4EC00C46101 /* Main.storyboard */; };
 		412626C3292FC4EC00C46101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412626C2292FC4EC00C46101 /* Assets.xcassets */; };
 		412626C6292FC4EC00C46101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412626C4292FC4EC00C46101 /* LaunchScreen.storyboard */; };
+		41FFE9CB292FEBA30043CEAE /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE9CA292FEBA30043CEAE /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		412626C2292FC4EC00C46101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		412626C5292FC4EC00C46101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		412626C7292FC4EC00C46101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FFE9CA292FEBA30043CEAE /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				412626C2292FC4EC00C46101 /* Assets.xcassets */,
 				412626C4292FC4EC00C46101 /* LaunchScreen.storyboard */,
 				412626C7292FC4EC00C46101 /* Info.plist */,
+				41FFE9CA292FEBA30043CEAE /* DetailsVC.swift */,
 			);
 			path = LandmarkBook;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412626BE292FC4EC00C46101 /* ViewController.swift in Sources */,
+				41FFE9CB292FEBA30043CEAE /* DetailsVC.swift in Sources */,
 				412626BA292FC4EC00C46101 /* AppDelegate.swift in Sources */,
 				412626BC292FC4EC00C46101 /* SceneDelegate.swift in Sources */,
 			);
